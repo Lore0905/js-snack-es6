@@ -40,13 +40,16 @@ const newFotballArrey = [];
 
 for( let i = 0; i < footballTeam.length; i++) {
 
+    const thisTeam = footballTeam[i];
+
     footballTeam.puntiFatti = getRndInteger(0, 30);
     footballTeam.falliSubiti = getRndInteger(10, 20);
     
-    const {puntiFatti, falliSubiti} = footballTeam;
+    const {nome} = thisTeam;
+    const {falliSubiti} = footballTeam;
 
     const copyfootballTeam = {
-        puntiFatti, 
+        nome, 
         falliSubiti
     };
 
