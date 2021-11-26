@@ -37,6 +37,16 @@ const footballTeam = [
 
 for( let i = 0; i < footballTeam.length; i++) {
     const singleTeam = footballTeam[i];
+
+    const footballTeamPoints = getRndInteger(0, 30);
+    const footballTeamFouls = getRndInteger(10, 20);
     
-    
+    singleTeam.puntiFatti = footballTeamPoints;
+    singleTeam.falliSubiti = footballTeamFouls;
+
+    console.log(singleTeam);
 }
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
