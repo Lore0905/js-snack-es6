@@ -36,25 +36,23 @@ const footballTeam = [
 ];
 
 // creo un nuovo arrey che contiene i punti e i falli subiti
-newFotballArrey = [];
+const newFotballArrey = [];
 
 for( let i = 0; i < footballTeam.length; i++) {
 
-    let singleTeam = footballTeam[i];
-
-    const footballTeamPoints = getRndInteger(0, 30);
-    const footballTeamFouls = getRndInteger(10, 20);
+    footballTeam.puntiFatti = getRndInteger(0, 30);
+    footballTeam.falliSubiti = getRndInteger(10, 20);
     
-    singleTeam.puntiFatti = footballTeamPoints;
-    singleTeam.falliSubiti = footballTeamFouls;
+    const {puntiFatti, falliSubiti} = footballTeam;
 
-    const footballTeam = {
+    const copyfootballTeam = {
         puntiFatti, 
         falliSubiti
     };
 
-    newFotballArrey.push(footballTeam);
+    newFotballArrey.push(copyfootballTeam);
 }
+console.log(newFotballArrey);
 
 
 function getRndInteger(min, max) {
