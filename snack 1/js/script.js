@@ -45,13 +45,28 @@ console.log(currentLightBike);
 
 // stampo il risultato nel DOM
 
+// const lighterBikeHTML = `
+// <div>
+//     <h2>la bici più performante che abbiamo, ha un peso di:</h2>
+//     <h1>${currentLightBike.peso} kg</h1>
+// </div>
+// `;
+
+// const bikeContainer = document.getElementById('container');
+// bikeContainer.innerHTML = lighterBikeHTML;
+
+// versione con la destruturazione
+
+const {peso} = currentLightBike;
+
+console.log(peso);
+
 const lighterBikeHTML = `
 <div>
     <h2>la bici più performante che abbiamo, ha un peso di:</h2>
-    <h1>${currentLightBike.peso} kg</h1>
+    <h1>${peso} kg</h1>
 </div>
 `;
 
 const bikeContainer = document.getElementById('container');
 bikeContainer.innerHTML = lighterBikeHTML;
-
