@@ -10,6 +10,9 @@ const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 const min = 3;
 const max = 5;
 
+
+// FOR EACH
+
 // const myArrayuno = [];
 
 
