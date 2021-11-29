@@ -20,4 +20,14 @@ const studentsUppercase = students.map((element, index, array) => {
 console.log(studentsUppercase);
 
 // 2-  Dobbiamo creare un nuovo array con gli studenti che hanno un totale di voti superiore a 70
+
+const studentsArreyGrades = students.map((element, index, array) => { 
+    if(element.grades > 70){
+        return element.name;
+    }
+
+});
+console.log(studentsArreyGrades);
+
 // 3-  Dobbiamo creare un nuovo array di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
+
