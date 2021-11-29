@@ -7,7 +7,7 @@
 
 const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 
-const min = 3;
+const min = 2;
 const max = 5;
 
 
