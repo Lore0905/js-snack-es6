@@ -21,7 +21,7 @@ console.log('parte 1 ' + studentsUppercase);
 
 // 2-  Dobbiamo creare un nuovo array con gli studenti che hanno un totale di voti superiore a 70
 
-const studentsArreyGrades = students.map((element, index, array) => { 
+const studentsArreyGrades = students.filter((element) => { 
     if(element.grades > 70){
         return element.name;
     }
@@ -31,7 +31,7 @@ console.log('parte 2 ' + studentsArreyGrades);
 
 // 3-  Dobbiamo creare un nuovo array di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
 
-const studentsArreyGradesId = students.map((element, index, array) => { 
+const studentsArreyGradesId = students.filter((element, index, array) => { 
     if((element.grades > 70) && (element.id > 120)){
         return element.name;
     }
